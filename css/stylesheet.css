@@ -323,9 +323,11 @@ canvas {
   background-color: #800020;
   position: absolute;
   right: 0;
+  padding: 10px;
 }
 
-#fineprint a:visited{
+#fineprint a:visited,
+#fineprint a{
   color: #fff;
 }
 
