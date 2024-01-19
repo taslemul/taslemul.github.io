@@ -307,9 +307,12 @@
         AOS.init();
         $(document).ready(function(){
             if(window.location.hash == '#particlesAreFun'){
-                $("#navigate").toggle();
+                if($(window).width() >= 768){
+                    $("#navigate").toggle();
+                }
                 $("#container").toggle();
                 $("#fineprint").toggle();
+                $("#hamburger-menu").toggle();
             }
             $(".hamburger-button").on( "click", function() {
                 $(".hamburger-button").animate({
