@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Taslemul | Web developer</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- particles.js container -->
@@ -34,6 +38,14 @@
             </li>
         </ul>
     </div>
+    <div id="hamburger-menu">
+        <button class="hamburger-button"> ☰ </button>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
     <div id="container">
         <div id="about" data-aos="fade-in">
             <img src="img/me.jpg" alt="me" />
@@ -43,8 +55,14 @@
     <div id="portfolio" data-aos="fade-in">
             <h1>Portfolio</h1>
             <div>
-                <p class="date"><b>Apr 2021 – Present</b></p>
-                <h2><a href="https://iosh.com">Institute of Occupational Health and Safety (IOSH)</a></h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><h2><a href="https://iosh.com">Institute of Occupational Health and Safety (IOSH)</a></h2></td>
+                            <td><p class="date"><b>Apr 2021 – Present</b></p></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <p><b>Position:</b> Frontend developer</p>
                 <p><b>Highlights:</b></p>
                 <ul>
@@ -122,60 +140,136 @@
             <table>
                 <tbody>
                     <tr>
-                        <td width="50%">
+                        <td width="33.3333333%">
                             <p><b>Frontend</b></p>
-                        </th>
-                        <td>
+                        </td>
+                        <td width="33.3333333%">
                             <p><b>Backend</b></p>
-                        </th>
+                        </td>
+                        <td width="33.3333333%">
+                            <p><b>Misc</b></p>
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <p>CSHTML</p>
-                        </th>
+                        </td>
                         <td>
-                            <p></p>
-                        </th>
+                            <p>SQL</p>
+                        </td>
+                        <td>
+                            <p>TypeScript</p>
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <p>HTML5</p>
-                        </th>
+                        </td>
                         <td>
-                            <p></p>
-                        </th>
+                            <p>ASP.NET</p>
+                        </td>
+                        <td>
+                            <p>Mobile first</p>
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <p>CSS3</p>
-                        </th>
+                        </td>
                         <td>
-                            <p></p>
-                        </th>
+                            <p>.NET6</p>
+                        </td>
+                        <td>
+                            <p>AGILE</p>
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <p>JavaScript</p>
-                        </th>
+                        </td>
                         <td>
-                            <p></p>
-                        </th>
+                            <p>Stencil.js</p>
+                        </td>
+                        <td>
+                            <p>Git</p>
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <p>jQuery</p>
-                        </th>
+                        </td>
                         <td>
-                            <p></p>
-                        </th>
+                            <p>REST API</p>
+                        </td>
+                        <td>
+                            <p>Gulp</p>
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <p></p>
-                        </th>
+                            <p>React</p>
+                        </td>
                         <td>
                             <p></p>
-                        </th>
+                        </td>
+                        <td>
+                            <p>JEST</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Angular</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p>Umbraco</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>SCSS</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p>MVC</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>LESS</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p>Azure</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Tailwind CSS</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Bootstrap</p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -192,6 +286,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+        $(document).ready(function(){
+            document.querySelector('.hamburger-button').addEventListener('click', function() {
+                document.querySelector('.nav-links').style.display = 
+                (document.querySelector('.nav-links').style.display == 'none') ? 'block' : 'none';
+            });
+        });
     </script>
 </body>
 </html>
