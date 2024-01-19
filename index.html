@@ -72,10 +72,10 @@
                         <p>Set up Cookies and <b>extended functionality</b> for Google Analytics to provide pivotal data needed for CRM which resulted in <b>decreased bounce rates</b> (10%).</p>
                     </li>
                     <li>
-                        <p>Implemented <b>urgent</b> rebranding in line with changes to corporate branding <b>within a short timeframe</b>, improving UI and UX for our regular users and journeys.</p>
+                        <p>Implemented <b>urgent</b> rebranding in line with changes to corporate branding <b>within a short timeframe</b>, improving UI and UX for our regular users and their journeys. Since the change, users have remained on the website for <b>12 seconds longer</b> on average.</p>
                     </li>
                     <li>
-                        <p><b>Encouraged auditing</b> for improvements to the website: critical security exploits updates, strongly typed code to speed up website and better browser support, maintenance plan, web push, React and <b>monthly meetings</b> with the wider team <b>giving updates and answering questions.</b></p>
+                        <p>Encouraged <b>auditing for improvements</b> to the website: critical security exploits updates, strongly typed code to speed up website and better browser support, maintenance plan, web push, React. Contributed to <b>monthly meetings</b> with the wider team <b>giving updates and answering questions with presentations.</b></p>
                     </li>
                     <li>
                         <p><b>Built new</b> interactive templates to replace the website's PDF resources and created new infographics to generate a level system for PDF resources <b>(demo available on request).</b></p>
@@ -297,13 +297,20 @@
             <p><b>Email:</b> <a href="mailto:taslemul.dev@gmail.com">taslemul.dev@gmail.com</a></p>
         </div>
     </div>
-
+    <div id="fineprint">
+        <p>This website was made in less than 5 hours. please feel free to <a href="https://github.com/taslemul/taslemul.github.io"><u>use</u></a> it for your own portfolio website</p>
+    </div>
     <script src="js/particlesJS/particles.min.js"></script>
     <script src="js/particlesJS/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
         $(document).ready(function(){
+            if(window.location.hash == '#particlesAreFun'){
+                $("#navigate").toggle();
+                $("#container").toggle();
+                $("#fineprint").toggle();
+            }
             $(".hamburger-button").on( "click", function() {
                 $(".hamburger-button").animate({
                     opacity: 'toggle'
@@ -313,7 +320,9 @@
                 }, 400);
             });
             $(".nav-links").on("click", function(){
-                $(".hamburger-button").toggle();
+                $(".hamburger-button").animate({
+                    opacity: 'toggle'
+                }, 400);
                 $(".nav-links").animate({
                     height: 'toggle'
                 }, 400);
