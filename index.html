@@ -40,7 +40,7 @@
     </div>
     <div id="hamburger-menu">
         <button class="hamburger-button"> ☰ </button>
-        <div class="nav-links">
+        <div class="nav-links" data-aos="fade-left">
             <a href="#">Home</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
@@ -291,7 +291,7 @@
         $(document).ready(function(){
             document.querySelector('.hamburger-button').addEventListener('click', function() {
                 document.querySelector('.nav-links').style.display = 
-                (document.querySelector('.nav-links').style.display == 'none') ? 'block' : 'none';
+                (document.querySelector('.nav-links').style.display == 'block') ? 'none' : 'block';
             });
         });
     </script>
