@@ -37,7 +37,7 @@
     </div>
     <div id="hamburger-menu">
         <button class="hamburger-button">&#9776;</button>
-        <button class="hamburger-button" style="display: none;">x</button>
+        <button class="hamburger-button" style="display: none; margin: 2.7px 4px 0 0">X</button>
         <div class="nav-links">
             <a id="burger-panel"></a>
             <a href="#about">About me</a>
@@ -50,7 +50,7 @@
     <div id="container">
         <div id="about" data-aos="fade-in">
             <img src="img/me.jpg" alt="me" />
-            <h1>&#128075; Hi, my name's Taz and I'm creative web developer based in London</h1>
+            <h1>&#128075; Hi, my name's Taz and I'm a creative web developer based in London</h1>
             <p>Specialising in .NET and Umbraco with a lense prioritising building modern and responsive websites. I’m passionate about creating engaging user interfaces that are fast, accessible, and easy to use. I have worked with various technologies and frameworks, such as JavaScript, jQuery, ASP.NET Core, Bootstrap, and C#. I’m always eager to learn new skills and explore new challenges in web development.</p>
         </div>
     <div id="portfolio" data-aos="fade-in">
@@ -68,7 +68,10 @@
                 <p><b>Highlights:</b></p>
                 <ul>
                     <li>
-                        <p>Implemented <b>urgent</b> rebranding in line with changes to corporate branding <b>within a short timeframe</b>.</p>
+                        <p>Set up Cookies and <b>extended functionality</b> for Google Analytics to provide pivotal data needed for CRM which resulted in <b>decreased bounce rates</b> (10%).</p>
+                    </li>
+                    <li>
+                        <p>Implemented <b>urgent</b> rebranding in line with changes to corporate branding <b>within a short timeframe</b>, improving UI and UX for our regular users and journeys.</p>
                     </li>
                     <li>
                         <p><b>Encouraged auditing</b> for improvements to the website: critical security exploits updates, strongly typed code to speed up website and better browser support, maintenance plan, web push, React and <b>monthly meetings</b> with the wider team <b>giving updates and answering questions.</b></p>
@@ -301,12 +304,18 @@
         AOS.init();
         $(document).ready(function(){
             $(".hamburger-button").on( "click", function() {
-                $(".hamburger-button").toggle();
-                $(".nav-links").toggle();
+                $(".hamburger-button").animate({
+                    opacity: 'toggle'
+                }, 400);
+                $(".nav-links").animate({
+                    height: 'toggle'
+                }, 400);
             });
             $(".nav-links").on("click", function(){
                 $(".hamburger-button").toggle();
-                $(".nav-links").toggle();
+                $(".nav-links").animate({
+                    height: 'toggle'
+                }, 400);
             });
         });
     </script>
