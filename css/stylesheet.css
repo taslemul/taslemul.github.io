@@ -58,6 +58,7 @@ p,h2 {
 
 .date {
   padding-left: 10px;
+  text-align: right;
 }
 
 a:visited,
@@ -122,11 +123,17 @@ canvas{
 }
 
 .hamburger-button {
-display: none;
+  display: none;
+}
+
+#burger-panel {
+  background-color: #fffdd0;
+  height: 55px;
 }
 
 .nav-links {
   display: none;
+  height: 100%;
 }
 
 #about img  {
@@ -135,7 +142,8 @@ display: none;
   margin: 0 auto 20px auto;
 }
 
-#projects img {
+#projects img,
+#portfolio table {
   width: 100%;
 }
 

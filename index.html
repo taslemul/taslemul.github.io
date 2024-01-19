@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Taslemul | Web developer</title>
-    <script
-			  src="https://code.jquery.com/jquery-3.7.1.min.js"
-			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- particles.js container -->
@@ -39,11 +36,15 @@
         </ul>
     </div>
     <div id="hamburger-menu">
-        <button class="hamburger-button"> ☰ </button>
-        <div class="nav-links" data-aos="fade-left">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+        <button class="hamburger-button">&#9776;</button>
+        <button class="hamburger-button" style="display: none;">x</button>
+        <div class="nav-links">
+            <a id="burger-panel"></a>
+            <a href="#about">About me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#projects">Projects</a>
+            <a href="#webstack">Webstack</a>
+            <a href="#contact">Contact/Hire me</a>
         </div>
     </div>
     <div id="container">
@@ -58,7 +59,7 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td><h2><a href="https://iosh.com">Institute of Occupational Health and Safety (IOSH)</a></h2></td>
+                            <td width="70%"><h2><a href="https://iosh.com">Institute of Occupational Health and Safety (IOSH)</a></h2></td>
                             <td><p class="date"><b>Apr 2021 – Present</b></p></td>
                         </tr>
                     </tbody>
@@ -79,8 +80,14 @@
                 <hr>
             </div>
             <div>
-                <p class="date"><b>May 2018 – 2021</b></p>
-                <h2>Pulse Graphics Ltd</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="70%"><h2>Pulse Graphics Ltd</h2></td>
+                            <td><p class="date"><b>May 2018 – 2021</b></p></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <p><b>Position:</b> Junior Frontend Developer</p>
                 <p><b>Highlights:</b></p>
                 <ul>
@@ -103,8 +110,14 @@
                 <hr>
             </div>
             <div>
-                <p class="date"><b>Apr 2017 – Apr 2018</b></p>
-                <h2>ZRNA Digital Solutions</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="70%"><h2>ZRNA Digital Solutions</h2></td>
+                            <td><p class="date"><b>Apr 2017 – Apr 2018</b></p></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <p><b>Position:</b> Junior User Experience Designer</p>
                 <p><b>Highlights:</b></p>
                 <ul>
@@ -169,7 +182,7 @@
                             <p>ASP.NET</p>
                         </td>
                         <td>
-                            <p>Mobile first</p>
+                            <p>Mobile</p>
                         </td>
                     </tr>
                     <tr>
@@ -285,13 +298,15 @@
     <script src="js/particlesJS/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
-    </script>
-    <script>
+        AOS.init();
         $(document).ready(function(){
-            document.querySelector('.hamburger-button').addEventListener('click', function() {
-                document.querySelector('.nav-links').style.display = 
-                (document.querySelector('.nav-links').style.display == 'block') ? 'none' : 'block';
+            $(".hamburger-button").on( "click", function() {
+                $(".hamburger-button").toggle();
+                $(".nav-links").toggle();
+            });
+            $(".nav-links").on("click", function(){
+                $(".hamburger-button").toggle();
+                $(".nav-links").toggle();
             });
         });
     </script>
