@@ -18,7 +18,7 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 ul li p, ol li p {display: inline;} 
-
+th{font-weight: normal;}
 
 /* =============================================================================
    My CSS
@@ -45,6 +45,7 @@ body{
 h1  {
   font-size: 20pt;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 h2{
@@ -75,6 +76,24 @@ h2,
 
 ul li {
   list-style-position: inside;
+}
+
+table {
+  width: 50%;
+  margin: 0 auto;
+}
+
+table td:not(:last-child)  {
+  text-align: right;
+  padding-right: 10px;
+}
+
+table td:not(:first-child)  {
+  padding-left: 10px;
+}
+
+table td + td {
+  border-left: 2px solid #000;
 }
 
 canvas{
@@ -115,6 +134,10 @@ canvas{
 
 #projects img {
   width: 100%;
+}
+
+#webstack h1{
+  text-align: center;
 }
 
 #container  {
