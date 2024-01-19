@@ -47,16 +47,30 @@ h1  {
   margin-bottom: 20px;
 }
 
+h2{
+  font-size: 15pt;
+}
+
 p {
   line-height: 1.5;
 }
 
-p:not(:last-child)  {
-  margin-bottom: 10px;
+a:visited,
+h2 {
+  color: #800020;
+}
+
+p:not(:last-child),
+ul li:not(:last-child),
+h2,
+#projects img,
+#projects div:not(:last-child)  {
+  margin-bottom: 15px;
 }
 
 .date {
-  
+  position: absolute;
+  right:0;
 }
 
 ul li {
@@ -80,8 +94,8 @@ canvas{
   list-style-type: none;
 }
 
-#navigate ul li:not(:first-child) {
-  margin-top: 20px;
+#navigate ul li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 #navigate ul li a{
@@ -93,10 +107,14 @@ canvas{
   text-align: center;
 }
 
-#self-portrait  {
+#about img  {
   width: 40%;
   display: block;
   margin: 0 auto 20px auto;
+}
+
+#projects img {
+  width: 100%;
 }
 
 #container  {
@@ -111,10 +129,11 @@ canvas{
   background-color:#fffdd0;
   padding: 25px;
   border-radius: 25px;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
-#portfolio div  {
+#portfolio div,
+#projects div  {
   background-color:unset;
   padding: unset;
   border-radius: unset;
