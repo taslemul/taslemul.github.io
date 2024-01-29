@@ -132,7 +132,7 @@
                         <p><b>Supported User Researchers</b> by developing wireframes and clickable prototypes for customer testing.</p>
                     </li>
                     <li>
-                        <p><b>Worked with cross-functional teams</b> across technology and business to deliver the new website proposition</p>
+                        <p><b>Worked with cross-functional teams</b> across technology and business to deliver the new website proposition.</p>
                     </li>
                 </ul>
             </div>
@@ -144,12 +144,18 @@
                 <img src="img/interactive-templates.png" alt="interactive-templates" />
                 <p><b>Background:</b> for this project, I was tasked with creating web templates for my company as we wanted to shift away from PDF's and into something more web based and interactive. With the help of the web team and UX/UI designers I was given wireframes followed by feedback to code up the entire structure from scratch using C#, HTML, CSS3, JavaScript and jQuery alongside tools built into Umbraco backoffice.</p>
                 <img src="img/umbraco-backoffice.png">
-                <p>This web application was also designed to give full freedom and flexibility to the content editors to design and curate content to suit their needs without having to have customisations programmed in case-by-case. This was done using inbuilt tools provided by Umbraco (Block Grid editor) where I individually programmed each component for content editing based on how our PDF's are structred</p>
+                <p>This web application was also designed to give full freedom and flexibility to the content editors to design and curate content to suit their needs without having to have customisations programmed in case-by-case. This was done using inbuilt tools provided by Umbraco (Block Grid editor) where I individually programmed each component for content editing based on how our PDF's are structred.</p>
+            </div>
+            <div>
+                <h2>Certificate verification</h2>
+                <img src="img/stencil.jpg" alt="stencil" />
+                <p><b>Background:</b> this was a mini project where neccessary changes was required on the frontend of a pre-existing Stencil.js web component app to match new markup standards for our new website launch. The source code consists of mainly TypeScript, JavaScript, HTML, CSS and API requests.</p>
+                <p>The view was succesfully updated. Alongside these changes, I was also tasked with creating a new form requesting validation for another type of certificate we offer with our courses. This was made from scratch using the inbuilt components in Stencil.js and a new query string that I created to call on existing data in the API webserver.</p>
             </div>
             <div>
                 <h2>Upcoming</h2>
                 <img src="img/okayy-logo.png" alt="okayy-project" />
-                <p><b>Okayy:</b> this is a collaborative open source community website I'm currently working on. It's made on a wide array of languages primarily React</p>
+                <p><b>Okayy:</b> this is a collaborative open source community website I'm currently working on. It's made on a wide array of languages primarily React.</p>
             </div>
         </div>
         <div id="webstack" data-aos="fade-in">
@@ -298,39 +304,11 @@
         </div>
     </div>
     <div id="fineprint">
-        <p>This website was made in less than 5 hours. Please feel free to <a target="_blank" href="https://github.com/taslemul/taslemul.github.io"><u>use</u></a> it for your own portfolio website</p>
+        <p>Please feel free to <a target="_blank" href="https://github.com/taslemul/taslemul.github.io"><u>use this</u></a> for your own portfolio website</p>
     </div>
     <script src="js/particlesJS/particles.min.js"></script>
     <script src="js/particlesJS/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        $(document).ready(function(){
-            if(window.location.hash == '#particlesAreFun'){
-                if($(window).width() >= 768){
-                    $("#navigate").toggle();
-                }
-                $("#container").toggle();
-                $("#fineprint").toggle();
-                $("#hamburger-menu").toggle();
-            }
-            $(".hamburger-button").on( "click", function() {
-                $(".hamburger-button").animate({
-                    opacity: 'toggle'
-                }, 400);
-                $(".nav-links").animate({
-                    height: 'toggle'
-                }, 400);
-            });
-            $(".nav-links").on("click", function(){
-                $(".hamburger-button").animate({
-                    opacity: 'toggle'
-                }, 400);
-                $(".nav-links").animate({
-                    height: 'toggle'
-                }, 400);
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
