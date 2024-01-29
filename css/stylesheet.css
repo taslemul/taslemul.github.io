@@ -291,7 +291,8 @@ canvas {
   width: 100%;
 }
 
-#webstack h1 {
+#webstack h1,
+#contact {
   text-align: center;
 }
 
