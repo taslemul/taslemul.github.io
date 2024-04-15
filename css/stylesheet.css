@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600&display=swap');
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
+}
+
+body {
+  line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+img {
+  display: block
+}
+
+nav ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold
+}
+
+del {
+  text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0
+}
+
+input,
+select {
+  vertical-align: middle
+}
+
+ul li p,
+ol li p {
+  display: inline;
+}
+
+th {
+  font-weight: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #fffdd0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 40px 0 20px 0;
+}
+
+p,
+h2 {
+  line-height: 1.5;
+}
+
+.date {
+  padding-left: 10px;
+  text-align: right;
+}
+
+a,
+a:visited,
+h3,
+strong,
+ul li::marker {
+  color: #800020;
+}
+
+#projects img {
+  margin: 20px 0;
+}
+
+#projects svg {
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+
+#container ul {
+  padding-left: 20px;
+}
+
+#container ul li{
+  margin: 20px 0;
+}
+
+#webstack table {
+  width: 70%;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+#webstack table tbody tr:first-child {
+  border-bottom: 2px solid black;
+}
+
+#webstack table tbody tr:nth-child(2) td {
+  padding-top: 15px;
+}
+
+#webstack table td {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+#webstack table td+td {
+  border-left: 2px solid #000;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#navigate {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%)
+}
+
+#navigate ul li {
+  padding: 0;
+  list-style-type: none;
+}
+
+#navigate ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#navigate ul li a {
+  color: #fff;
+  font-size: large;
+  background-color: #000;
+  margin: 0px;
+  display: block;
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+}
+
+.hamburger-button {
+  display: none;
+}
+
+#burger-panel {
+  background-color: #fffdd0;
+  height: 55px;
+}
+
+.nav-links {
+  display: none;
+  height: 100%;
+}
+
+#about img {
+  width: 40%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+#projects img,
+#portfolio table {
+  width: 100%;
+}
+
+#webstack h1,
+#contact {
+  text-align: center;
+}
+
+#container {
+  width: 60%;
+  overflow: auto;
+  display: block;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
+#container div {
+  background-color: #fffdd0;
+  padding: 25px;
+  border-radius: 25px;
+  margin: 50px 0;
+}
+
+#container div p {
+  margin: 20px 0;
+}
+
+#portfolio div,
+#projects div {
+  background-color: unset;
+  padding: unset;
+  border-radius: unset;
+  margin: unset;
+}
+
+#portfolio .title-date {
+  display: flex;
+}
+
+#portfolio .title-date h3{
+  margin: auto 0;
+}
+
+#portfolio .title-date > *:first-child {
+  flex: 65%;
+}
+
+#portfolio .title-date > *:last-child {
+  flex: 35%;
+  margin: auto 0;
+  text-align: right;
+}
+
+#portfolio svg {
+  margin-top: 10px;
+}
+
+#fineprint  {
+  background-color: #800020;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+
+#fineprint a:visited,
+#fineprint a{
+  color: #fff;
+}
+
+#fineprint p  {
+  font-size:small;
+  color: #ccc;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+/****
+MOBILE FRIENDLYNESS
+****/
+@media only screen and (max-width: 1024px) {
+  #container {
+    margin: 0 80px 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    width: 100%;
+  }
+
+  #navigate {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+    color: #800020;
+    padding: 15px;
+    font-size: 24px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .nav-links {
+    background-color: #000;
+    color: white;
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    background-color: #111;
+  }
+
+  #webstack table td:nth-child(2) {
+    width: 100%;
+    white-space: nowrap;
+  }
+}
